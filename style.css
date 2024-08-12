@@ -1,0 +1,1023 @@
+*{
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.5s;
+}
+body{
+    height: 2000px;
+}
+/* ********************************************** Menyu ***********************************************************/
+nav{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+    /* outline: 2px solid red; */
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.logoBox{
+    /* width: 400px; */
+    display: flex;
+    /* outline: 2px solid blue; */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    /* outline: 2px solid red; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #999;
+    color: white;
+}
+.logoName{
+    /* outline: 2px solid red; */
+}
+nav ul{
+    /* width: 50%; */
+    /* outline: 2px solid blue; */
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact{
+    /* outline: 5px solid red; */
+    display: flex;
+    gap: 50px;
+}
+.sotSet {
+    /* outline: 2px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.images1{
+    width: 50px;
+    height: 50px;
+}
+.images2{
+    width: 55px;
+    height: 55px;
+}
+.images3{
+    width: 50px;
+    height: 50px;
+}
+.tel {
+    /* outline: 2px solid blue; */
+    
+}
+.insta {
+    width: 50px;
+    border-radius: 50%;
+}
+nav ul li{
+    /* outline: 2px solid red; */
+    
+}
+nav ul li a{
+    /* outline: 2px solid blue; */
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+}
+.tel h4 {
+    font-size: 20px;
+}
+@media screen and (max-width: 1250px) {
+    .contact{
+        gap: 0px;
+    }
+    
+}
+@media screen and (max-width: 1190px) {
+    .contact{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    nav ul{
+        width: 70%;
+    }
+}
+/* ********************************************** Menyu left drop ***********************************************************/
+.spanchik{
+    font-size:30px;
+    cursor:pointer;
+    display: none;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.leftContact{
+    text-align: center;
+    margin-top: 50px;
+}
+.leftContact p{
+    color: #818181;
+    margin-bottom: 5px;
+}
+.leftContact h3{
+    margin-bottom: 10px;
+    color: #818181;
+}
+.leftContact a{
+    /* margin-bottom: 30px; */
+    font-size: 20px;
+    color: rgb(42, 188, 98);
+    display: block;
+}
+.leftContact i{
+    color: #818181;
+    margin-left: 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+@media screen and (max-width: 900px) {
+    nav ul{
+        display: none;
+    }
+    .spanchik{
+        display: block;
+    }
+    .contact{
+        width: initial;
+    }
+    nav ul{
+        width: initial;
+    }
+}
+@media screen and (max-width: 650px) {
+    .contact{
+        display: none;
+    }
+}
+  
+/* ********************************************** Header Carousel ***********************************************************/
+header{
+    /* outline: 2px solid red; */
+}
+.slide {
+    width: 100%;
+    /* outline: 2px solid blue; */
+}
+
+.slideshow-container {
+    /* outline: 2px solid red; */
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: rgb(67, 68, 92);
+}
+
+.mySlides {
+    /* outline: 3px solid blue; */
+    width: 100%;
+    display: none;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 50px;
+    right: 150px;
+    border-radius: 30px;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    /* outline: 2px solid red; */
+    background-color: rgb(176, 176, 176,0.5);
+}
+.text:hover {
+    background-color: rgb(176, 176, 176,1);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    
+    to {
+        opacity: 1
+    }
+}
+@media screen and (max-width: 1200px) {
+    .mySlides{
+        height: 600px;
+    }    
+}
+@media screen and (max-width: 1100px) {
+    .mySlides{
+        height: 550px;
+    }    
+}
+@media screen and (max-width: 1000px) {
+    .mySlides{
+        height: 500px;
+    }    
+}
+@media screen and (max-width: 900px) {
+    .mySlides{
+        height: 450px;
+    }    
+    .text{
+        width: 500px;
+        height: 180px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .mySlides{
+        height: 400px;
+    }    
+    .text{
+        width: 450px;
+        height: 150px;
+        right: 100px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .mySlides{
+        height: 350px;
+    }    
+    .text{
+        width: 400px;
+        height: 120px;
+        right: 50px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .mySlides{
+        height: 300px;
+    }    
+    .text{
+        width: 350px;
+        right: 30px;
+        bottom: 30px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .mySlides{
+        height: 250px;
+    }    
+    .text{
+        width: 300px;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .mySlides{
+        height: 200px;
+    }    
+    .text{
+        width: 200px;
+        right: 50px;
+        bottom: 5px;
+    }
+}
+/* ********************************************** Content ***********************************************************/
+.content{
+    background-color: #333;
+    /* outline: 2px solid red; */
+    padding: 50px 0px;
+}
+.box{
+    /* outline: 2px solid red; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.contBox{
+    /* outline: 2px solid blue; */
+
+}
+.btnBox{
+    /* outline: 2px solid blue; */
+    text-align: center;
+}
+.c1 h1{
+    font-size: 2.2vw;
+    color: white;
+}
+.c1 p{
+    font-size: 1.4vw;
+    color: white;
+    margin-top: 20px;
+}
+.c1 button{
+    background-color: wheat;
+    font-size: 2vw;
+    border: 0px;
+    border-radius: 10px;
+    padding: 15px 40px;
+    margin-top: 100px;
+}
+.c1{
+    width: 50%;
+    /* outline: 2px solid blue; */
+}
+.c2{
+    /* outline: 2px solid blue; */
+    width: 50%;
+    
+}
+.content h1{
+    color: white;
+    
+}
+.img{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.img img{
+    /* outline: 2px solid red; */
+    width: 46.5%;
+    border-radius: 10px;
+}
+.contBox .img1{
+    width: 100%;
+}
+.img1 img{
+    /* outline: 2px solid red; */
+    border-radius: 10px;
+    width: 96%;
+    margin: 0px 20px;
+}
+@media screen and (max-width:1000px) {
+    .c1 h1{
+        font-size: 2.2vw;
+    }
+    .c1 p{
+        font-size: 1.4vw;
+    }
+}
+@media screen and (max-width: 900px) {
+    .box{
+        width: 98%;
+    }
+    .c1{
+        width: 45%;
+        
+    }
+    .c2{
+        
+        width: 55%;
+    }
+    .img{
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .img1 img{
+        margin: 0px 10px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .c1 h1{
+        font-size: 2.3vw;
+    }
+    .c1 p{
+        font-size: 1.6vw;
+    }
+}
+@media screen and (max-width: 700px) {
+    .c1 h1{
+        font-size: 2.4vw;
+    }
+    .c1 p{
+        font-size: 1.8vw;
+    }
+    .c1 button{
+        font-size: 2.5vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .c1 h1{
+        font-size: 2.45vw;
+    }
+    .c1 p{
+        font-size: 2vw;
+    }
+}
+
+/* ********************************************** Content1 ***********************************************************/
+.content1{
+    padding: 20px 0px;
+    /* outline: 2px solid red; */
+}
+.content1 h1{
+    text-align: center;
+    font-size: 2vw;
+}
+.slide1 {
+    width: 100%;
+    margin-top: 20px;
+    /* outline: 2px solid blue; */
+}
+
+.slideshow-container1 {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: #555;
+}
+
+.mySlides1 {
+    /* outline: 2px solid greenyellow; */
+    width: 100%;
+    display: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+}
+.showSlideBox{
+    /* outline: 7px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.showSlide{
+    width: 455px;
+    height: 400px;
+    background-size: 100% 100%;
+}
+
+.prev1,
+.next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next1 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev1:hover,
+.next1:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext1 {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot1 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active1,
+.dot1:hover {
+    background-color: #717171;
+}
+
+.fade1 {
+    animation-name: fade1;
+    animation-duration: 3s;
+}
+
+@keyframes fade1 {
+    from {
+        opacity: .4
+    }
+    
+    to {
+        opacity: 1
+    }
+}
+@media screen and (max-width : 1600px) {
+    .showSlide{
+        width: 350px;
+        height: 300px;
+        background-size: 100% 100%;
+    }
+}
+@media screen and (max-width : 1440px) {
+    .showSlide{
+        width: 300px;
+        height: 250px;
+        background-size: 100% 100%;
+    }
+}
+@media screen and (max-width : 1200px) {
+    .content1 h1{
+        font-size: 2.5vw;
+    }
+}
+@media screen and (max-width : 700px) {
+    .content1 h1{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width : 620px) {
+    .showSlide{
+        width: 250px;
+        height: 200px;
+        background-size: 100% 100%;
+    }
+}
+@media screen and (max-width : 515px) {
+    .showSlide{
+        width: 200px;
+        height: 150px;
+        background-size: 100% 100%;
+    }
+    .content1 h1{
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width : 415px) {
+    .showSlide{
+        width: 300px;
+        height: 250px;
+        background-size: 100% 100%;
+    }
+    .content1 h1{
+        font-size: 4.5vw;
+    }
+}
+/* ****************************************************** Content2 ************************************************** */
+.content4{
+    background-color: #555;
+    margin: 20px 0px;
+    /* border: 5px solid red; */
+    display: flex;
+}
+.linkBox{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    /* border: 5px solid pink; */
+}
+.linkBox h2{
+    /* border: 5px solid blue; */
+    font-size: 1.8vw;
+}
+.linkBox img{
+    /* border: 5px solid blue; */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+.box4_1 h1{
+    /* border: 5px solid blue; */
+    margin-bottom: 30px;
+    font-size: 1.8vw;
+}
+.box4_1{
+    width: 40%;
+    padding: 30px;
+    color: white;
+    /* border: 5px solid green; */
+}
+.box4_2{
+    width: 59%;
+    padding: 30px;
+    /* border: 5px solid green; */
+    }
+.dr{
+    /* border: 5px solid blue; */
+    padding: 20px;
+    background-color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    color: wheat;
+    display: flex;
+    justify-content: space-between;
+}
+.dw{
+    /* border: 5px solid red; */
+    padding: 15px;
+    transition: all 0s;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.dw p{
+    /* border: 5px solid red; */
+    font-size: 1.2vw;
+}
+.btnBox1{
+    /* border: 5px solid red; */
+    padding: 20px;
+    text-align: center;
+}
+.btnBox1 h4{
+    /* border: 5px solid red; */
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2vw;
+}
+.btnBox1 button {
+    border: 0px;
+    padding: 15px 30px;
+    font-size: 1vw;
+    background-color: wheat;
+    border-radius: 10px;
+    /* border: 5px solid red; */
+}
+.btnBox1 button:hover {
+    background-color: #999;
+    color: white;
+}
+.btnBox1 button:active {
+    background-color: wheat;
+    color: black
+}
+@media screen and (max-width: 1200px) {
+    .linkBox img{
+        width: 40px;
+        height: 40px;
+    }
+    .linkBox h2{
+        font-size: 2vw;
+    }
+    .box4_1 h1{
+        font-size: 2vw;
+    }
+    .dw p{
+        font-size: 1.5vw;
+    }
+    .btnBox1 button {
+        font-size: 1.5vw;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .linkBox img{
+        width: 35px;
+        height: 35px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .btnBox1 h4{
+        font-size: 2.5vw;
+    }
+    .linkBox h2{
+        font-size: 2.5vw;
+    }
+    .box4_1 h1{
+        font-size: 2.5vw;
+    }
+    .linkBox img{
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+    }
+    .box4_1{
+        padding: 20px 5px;
+    }
+    .box4_2{
+        padding: 20px 5px;
+    }
+    .dw p{
+        font-size: 1.8vw;
+    }
+}
+@media screen and (max-width: 700px) {
+    .btnBox1 h4{
+        font-size: 3vw;
+    }
+    .linkBox h2{
+        font-size: 3vw;
+    }
+    .box4_1 h1{
+        font-size: 3vw;
+    }
+    .dr{
+        font-size: 2.5vw;
+    }
+    .dw p{
+        font-size: 2vw;
+    }
+    .btnBox1 button {
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 550px) {
+    .linkBox img{
+        width: 30px;
+        height: 30px;
+        margin-left: 0px;
+    }
+    .linkBox h2{
+        font-size: 2.8vw;
+    }
+    .btnBox1 button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .dw p{
+        font-size: 2.5vw;
+    }
+}
+@media screen and (max-width: 410px) {
+    .linkBox img{
+        width: 25px;
+        height: 25px;
+    }
+    .linkBox h2{
+        font-size: 2.5vw;
+    }
+    .btnBox1 h4{
+        font-size: 2.5vw;
+    }
+    .btnBox1 button {
+        padding: 10px 15px;
+        font-size: 3.5vw;
+    }
+    .dw p{
+        font-size: 2.5vw;
+    }
+}
+/* ****************************************************** O Kompanie ************************************************** */
+.komp{
+    /* border: 5px solid blue; */
+}
+.kompBox{
+    /* border: 5px solid red; */
+    width: 80%;
+    margin: auto;
+}
+.kompBox h1{
+    /* border: 5px solid green; */
+    text-align: center;
+    font-size: 3vw;
+}
+.kompBox p{
+    font-size: 2vw;
+    /* border: 5px solid yellow; */
+    text-align: center;
+    margin-top: 15px;
+}
+.kompFlex{
+    display: flex;
+    /* border: 5px solid pink; */
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    
+}
+.svg{
+    /* border: 5px solid blue; */
+}
+.svg img{
+    /* border: 5px solid powderblue; */
+    margin-top: 20px;
+}
+.svg h2{
+    /* border: 5px solid red; */
+    margin-top: 30px;
+    font-size: 2vw;
+}
+@media screen and (max-width: 1000px) {
+    .kompBox h1{
+        font-size: 3.5vw;
+    }
+    .kompBox p{
+        font-size: 2.5vw;
+    }
+    .svg h2{
+        font-size: 2.5vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    .kompBox h1{
+        font-size: 4vw;
+    }
+    .kompBox p{
+        font-size: 2.8vw;
+    }
+    .svg h2{
+        font-size: 2.5vw;
+    }
+    .kompBox{
+        width: 99%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .svg img{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .kompBox h1{
+        font-size: 4.5vw;
+    }
+    .kompBox p{
+        font-size: 3.1vw;
+    }
+    .svg h2{
+        font-size: 3vw;
+    }
+    .svg img{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .kompBox h1{
+        font-size: 5vw;
+    }
+    .kompBox p{
+        font-size: 3.5vw;
+    }
+    .svg h2{
+        font-size: 3vw;
+    }
+    .svg img{
+        width: 50px;
+        height: 50px;
+    }
+}
+/* ****************************************************** Footer ************************************************** */
+footer{
+    background-image: url(img/slide1.jpg);
+    background-blend-mode: multiply;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-color: #333;
+    margin-top: 50px;
+    border-top: 2px solid grey;
+    height: 600px;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+footer h1{
+    margin: 40px 0px;
+}
+footer p{
+    color: #999;
+    margin-bottom: 10px;
+}
+footer h2{
+    margin-bottom: 30px;
+}
+footer a{
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: rgb(42, 188, 98);
+    display: block;
+}
+footer i{
+    color: #999;
+    margin-left: 10px;
+}
+@media screen and (max-width: 1200px) {
+    footer{
+        height: 550px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    footer{
+        height: 500px;
+    }
+    footer h1{
+        margin: 30px 0px;
+    }
+}
+@media screen and (max-width: 700px) {
+    footer{
+        background-image: url(img/photo_2024-08-08_22-09-03.jpg);
+    }
+}
+@media screen and (max-width: 600px) {
+    footer{
+        background-image: url(img/photo_2024-08-08_22-09-35.jpg);
+    }
+}
