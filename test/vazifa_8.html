@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .col_1{
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            border-radius: 50%;
+            outline: 20px solid gray;
+            margin: auto;
+            margin-top: 100px;
+            border: 20px solid white;
+            border-top: 20px solid blue;
+            animation: anime 5s infinite linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col_2{
+            border: 20px solid white;
+            outline: 20px solid gray;
+            border-bottom: 20px solid blue;
+            border-radius: 50%;
+            width: 420px;
+            height: 420px;
+            animation: anime 6s infinite linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes anime{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="col_1">
+        <div class="col_2">
+        </div>
+    </div>
+</body>
+</html>

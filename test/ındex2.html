@@ -1,29 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Animated Counter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
     <style>
-        svg{
-            background-color: #999;
+
+
+        .counter-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2rem 0;
         }
-        .path-i9rtv1tnw{
-            fill: green;
+
+        .social {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem 0;
         }
+
+        .social-icon {
+            padding: 5px;
+            font-size: 2rem;
+            color: #fff;
+            border-radius: 50%;
+            border: 2px solid white;
+            border-left: 2px solid red;
+            animation: animeLeft 5s infinite linear;
+        }
+
+        .social-iconInt {
+            padding: 5px;
+            animation: animeRight 5s infinite linear;
+
+        }
+
+        .social-iconInt2 {
+            animation: animeRight 5s infinite linear;
+            padding: 10px;
+            border-radius: 50%;
+            border: 2px solid white;
+            border-left: 2px solid red;
+        }
+
+        .stop {
+            animation: animeLeft 5s infinite linear;
+
+        }
+
+        .social-icon i {
+            padding: 0.7rem;
+            border-radius: 50%;
+        }
+
+        .fa-youtube {
+            background: #c4302b;
+        }
+
+        .social h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: "Nunito", sans-serif;
+        }
+
+        @keyframes animeLeft {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes animeRight {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+
     </style>
 </head>
+
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="87" height="88"
-    viewBox="0 0 87 88" data-prefix="iimxxtsjb">
-    <g fill-rule="evenodd">
-        <path
-            d="M83.479 29.322l-2.973-1.23c4.036-9.906 4.08-17.88.118-21.879-.962-.972-2.166-1.715-3.576-2.211l1.06-3.055c1.873.658 3.484 1.662 4.792 2.981 4.992 5.039 5.198 14.057.579 25.394zM67.968 3.517L67.51.315c2.285-.334 4.437-.397 6.389-.184l-.342 3.217c-1.689-.183-3.564-.125-5.589.169zM57.5 3.116a50.855 50.855 0 0 1 5.978-1.981l.803 3.134a48.011 48.011 0 0 0-5.601 1.855L57.5 3.116zm11.584 23.78l1.607 2.803-5.322 3.094-1.607-2.803 5.322-3.094zm4.85 15.178v3.235h-6.429v-3.235h6.429zm-10.15 15.335l1.607-2.803 5.298 3.079-1.607 2.803-5.298-3.079zm16.578-13.718c0 14.405-8.381 27.647-21.352 33.739l-1.359-2.932c11.844-5.563 19.497-17.655 19.497-30.807 0-18.734-15.141-33.975-33.75-33.975a33.458 33.458 0 0 0-18.046 5.261l-1.723-2.734A36.685 36.685 0 0 1 43.398 6.48c20.383 0 36.964 16.692 36.964 37.211zM18.718 7.756a43.573 43.573 0 0 1 5.858-3.435l1.393 2.917a40.226 40.226 0 0 0-5.421 3.179l-1.83-2.661zm2.717 10.136a34.333 34.333 0 0 0-2.14 2.019l-2.301-2.259a37.374 37.374 0 0 1 2.344-2.212l2.097 2.452zM4.369 34.05l-3.123-.768C3.35 24.619 7.99 16.9 14.665 10.957l2.128 2.424A40.295 40.295 0 0 0 4.369 34.05zM6 59.283a47.383 47.383 0 0 0-1.81 5.621l-3.117-.79a51.01 51.01 0 0 1 1.932-6.007L6 59.283zM3.327 74.079l-3.196.351c-.213-1.977-.153-4.152.178-6.467l3.182.461c-.293 2.046-.348 3.95-.164 5.655zm29.25-52.495l-2.784 1.618-3.07-5.351 2.784-1.618 3.07 5.351zm.016 44.203l-3.087 5.383-2.785-1.617 3.087-5.384 2.785 1.618zM27.787 77.43C14.815 71.338 6.434 58.096 6.434 43.691c0-7.838 2.394-15.338 6.923-21.686l2.612 1.886c-4.136 5.797-6.32 12.643-6.32 19.8 0 13.152 7.652 25.244 19.497 30.807l-1.359 2.932zm-4.753-47.44l-1.607 2.803-5.322-3.094 1.607-2.803 5.322 3.094zm-.022 27.419l-5.298 3.079-1.607-2.803 5.298-3.079 1.607 2.803zM12.863 42.074h6.428v3.235h-6.428v-3.235zm32.142-27.505v29.792l-12.684 12.77-2.273-2.288 11.743-11.821V14.569h3.214zm12.284 1.664l2.785 1.618-3.07 5.351-2.784-1.618 3.069-5.351zM6.182 81.179c6.815 6.996 25.034 1.068 43.146-13.752l-6.068-1.139.59-3.182 10.966 2.06-1.761 10.978-3.173-.515.829-5.166C37.213 81.391 24.092 87.368 14.539 87.368c-4.418 0-8.072-1.275-10.652-3.923-1.299-1.332-2.285-2.939-2.932-4.773l3.029-1.081c.49 1.386 1.229 2.595 2.198 3.588zm61.896-1.553a43.351 43.351 0 0 1-5.857 3.435l-1.394-2.916a40.164 40.164 0 0 0 5.421-3.179l1.83 2.66zm14.35-26.294l3.123.768c-2.105 8.663-6.744 16.383-13.419 22.325l-2.128-2.423c6.18-5.503 10.476-12.651 12.424-20.67z"
-            class="path-i9rtv1tnw"></path>
-        <path
-            d="M72.132 76.425l-2.128-2.423c6.18-5.503 10.476-12.651 12.424-20.67l3.123.768c-2.105 8.663-6.744 16.383-13.419 22.325zM59.01 77.43l-1.359-2.932c11.844-5.563 19.497-17.655 19.497-30.807 0-18.734-15.141-33.975-33.75-33.975a33.458 33.458 0 0 0-18.046 5.261l-1.723-2.734A36.685 36.685 0 0 1 43.398 6.48c20.383 0 36.964 16.692 36.964 37.211 0 14.405-8.381 27.647-21.352 33.739zM18.718 7.756a43.573 43.573 0 0 1 5.858-3.435l1.393 2.917a40.226 40.226 0 0 0-5.421 3.179l-1.83-2.661zm2.717 10.136a34.333 34.333 0 0 0-2.14 2.019l-2.301-2.259a37.374 37.374 0 0 1 2.344-2.212l2.097 2.452zM4.369 34.05l-3.123-.768C3.35 24.619 7.99 16.9 14.665 10.957l2.128 2.424A40.295 40.295 0 0 0 4.369 34.05zM6 59.283a47.383 47.383 0 0 0-1.81 5.621l-3.117-.79a51.01 51.01 0 0 1 1.932-6.007L6 59.283zM3.327 74.079l-3.196.351c-.213-1.977-.153-4.152.178-6.467l3.182.461c-.293 2.046-.348 3.95-.164 5.655zm25.819.419l-1.359 2.932C14.815 71.338 6.434 58.096 6.434 43.691c0-7.838 2.394-15.338 6.923-21.686l2.612 1.886c-4.136 5.797-6.32 12.643-6.32 19.8 0 13.152 7.652 25.244 19.497 30.807zM6.182 81.179c6.815 6.996 25.034 1.068 43.146-13.752l-6.068-1.139.59-3.182 10.966 2.06-1.761 10.978-3.173-.515.829-5.166C37.213 81.391 24.092 87.368 14.539 87.368c-4.418 0-8.072-1.275-10.652-3.923-1.299-1.332-2.285-2.939-2.932-4.773l3.029-1.081c.49 1.386 1.229 2.595 2.198 3.588zm61.896-1.553a43.351 43.351 0 0 1-5.857 3.435l-1.394-2.916a40.164 40.164 0 0 0 5.421-3.179l1.83 2.66z"
-            class="path-ix004ohoj"></path>
-    </g>
-</svg>
+    <div class="social">
+        <div class="social-icon">
+            <div class="social-iconInt">
+                <div class="social-iconInt2">
+                    <div class="stop">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Subscribers</p>
+        <h3 class="counter" data-count="21035">0</h3>
+    </div>
+
+    <script>
+        const counters = document.querySelectorAll('.counter');
+
+        counters.forEach(counter => {
+            function updateCount() {
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerHTML;
+
+                const inc = Math.floor((target - count) / 100);
+
+                if (count < target && inc > 0) {
+                    counter.innerHTML = (count + inc);
+                    setTimeout(updateCount, 1);
+                }
+                else {
+                    counter.innerHTML = target;
+                }
+            }
+            updateCount();
+        });
+    </script>
 </body>
+
 </html>
