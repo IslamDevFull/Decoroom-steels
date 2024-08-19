@@ -4,47 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Slicebox - 3D Image Slider with Fallback" />
+    <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
+    <meta name="author" content="Pedro Botelho for Codrops" />
+    <link rel="stylesheet" type="text/css" href="libiray/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="libiray/css/slicebox.css" />
+    <link rel="stylesheet" type="text/css" href="libiray/css/custom.css" />
+    <script type="text/javascript" src="libiray/js/modernizr.custom.46884.js"></script>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./slick/slick.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"> -->
     <link rel="stylesheet" href="style.css">
-    <script src="Jquery/jquery.js"></script>
+    <!-- <script src="Jquery/jquery.js"></script>
     <script src="Jquery/typed.min.js"></script>
-    <script src="Jquery/sweetalert2.js"></script>
+    <script src="Jquery/sweetalert2.js"></script> -->
     <title>Decoroom steel</title>
 </head>
 
 <body>
     <!-- -------------------------------------------- Menyu ------------------------------------------------ -->
     <nav id="nav">
-        <div class="logoBox">
+        <div class="navBox">
             <div class="logo">Logo</div>
-            <div class="logoName">
-                <h3>Decoroom steel</h3>
-                <p>Издели из нержавейки</p>
-            </div>
+            <h3>Decoroom Steel</h3>
         </div>
-        <ul>
-            <li><a href="">Главная</a></li>
-            <li><a href="">О компании</a></li>
-            <li><a href="">Наши работы</a></li>
-            <li><a href="">Отзывы о нас</a></li>
-            <li><a href="">Контакты</a></li>
-        </ul>
-        <div class="contact">
-            <div class="tel">
-                <h4>+(998)91 409-34-74</h4>
-                <h4>+(998)91 829-76-37</h4>
-            </div>
-            <div class="sotSet">
-                <a href="">
-                    <img class="images1" src="svg/telegram-svgrepo-com.svg" alt="Error">
-                </a>
-                <a href="">
-                    <img class="images2" src="svg/instagram-svgrepo-com.svg" alt="Error">
-                </a>
-                <a href="">
-                    <img class="images3" src="svg/youtube-svgrepo-com.svg" alt="Error">
-                </a>
-            </div>
+        <div class="navBox">
+            <ul>
+                <li>Главная</li>
+                <li>О компании</li>
+                <li>Наши работы</li>
+                <li>Галерея</li>
+                <li>Контакты</li>
+            </ul>
+        </div>
+        <div class="navBox">
+            <button class="btn1">Наш магазин</button>
+            <button class="btn2">Обратная связь</button>
         </div>
         <span class="spanchik" onclick="openNav()">&#9776;</span>
     </nav>
@@ -54,7 +49,6 @@
         <a href="#">Главная</a>
         <a href="#">О компании</a>
         <a href="#">Наши работы</a>
-        <a href="#">Отзывы о нас</a>
         <a href="#">Контакты</a>
         <div class="leftContact">
             <h3>+998(94)320 94 99</h3>
@@ -68,304 +62,237 @@
         </div>
     </div>
     <!-- -------------------------------------------- Header ------------------------------------------------ -->
-    <header>
-        <div class="slide">
-            <div class="slideshow-container">
-                <div class="mySlides fade" style="background-image: url(img/slide1.jpg);">
-                    <div class="numbertext">1 / 3</div>
-                    <div class="text">Caption Text</div>
-                </div>
-
-                <div class="mySlides fade" style="background-image: url(img/slide2.jpg);">
-                    <div class="numbertext">2 / 3</div>
-                    <div class="text">Caption Two</div>
-                </div>
-
-                <div class="mySlides fade" style="background-image: url(img/slide3.jpg);">
-                    <div class="numbertext">3 / 3</div>
-                    <div class="text">Caption Three</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-            <div style="text-align:center;">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+    <header></header>
+    <section class="part">
+        <h3>Нам доверяют</h3>
+        <div class="marquee">
+            <div class="marquee__content">
+                <ul class="list-inline">
+                    <li>Kronospan</li>
+                    <li>Kedr</li>
+                    <li>MESAN</li>
+                    <li>HIGOLD</li>
+                    <li>STARAX</li>
+                </ul>
+                <ul class="list-inline">
+                    <li>Slotex</li>
+                    <li>FomLayn</li>
+                    <li>Kashtan</li>
+                    <li>Blum</li>
+                    <li>DTC</li>
+                </ul>
+                <ul class="list-inline">
+                    <li>GTV</li>
+                    <li>Pakcnoob</li>
+                    <li>AGT</li>
+                    <li>MULLER</li>
+                    <li>DTC</li>
+                </ul>
             </div>
         </div>
-    </header>
+    </section>
     <!-- -------------------------------------------- Content ------------------------------------------------ -->
-    <div class="content">
-        <div class="box">
-            <div class="contBox c1">
-                <h1>Предлагаем Вам <b style="color: lightskyblue;" id="typed"></b></h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum ad animi quibusdam esse libero
-                    tempora atque perspiciatis,
-                    maxime quia mollitia dicta distinctio necessitatibus, suscipit placeat, aspernatur at! Id, ipsum
-                    quam!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum ad animi quibusdam esse libero
-                    tempora atque perspiciatis,
-                    maxime quia mollitia dicta distinctio necessitatibus, suscipit placeat, aspernatur at! Id, ipsum
-                    quam!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum ad animi quibusdam esse libero
-                    tempora atque perspiciatis,
-                    maxime quia mollitia dicta distinctio necessitatibus, suscipit placeat, aspernatur at! Id, ipsum
-                    quam!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum ad animi quibusdam esse libero
-                    tempora atque perspiciatis,
-                    maxime quia mollitia dicta distinctio necessitatibus, suscipit placeat, aspernatur at! Id, ipsum
-                    quam!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum ad animi quibusdam esse libero
-                    tempora atque perspiciatis,
-                    maxime quia mollitia dicta distinctio necessitatibus, suscipit placeat, aspernatur at! Id, ipsum
-                    quam!
-                </p>
-                <div class="btnBox">
-                    <button>Наш Магазин</button>
-                </div>
-            </div>
-            <div class="contBox c2">
-                <div class="img">
-                    <img src="img/photo_2024-08-08_22-09-35.jpg" alt="Error">
-                    <img src="img/photo_2024-08-08_22-09-35.jpg" alt="Error">
-                </div>
-                <div class="img1">
-                    <img src="img/slide2.jpg" alt="Error">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- -------------------------------------------- Content1 ------------------------------------------------ -->
-    <div class="content1">
-        <h1>Наше популярные товары</h1>
-        <div class="slide1">
-            <div class="slideshow-container1">
-                <div class="mySlides1 fade1">
-                    <div class="numbertext1">1 / 3</div>
-                    <div class="showSlideBox">
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-03.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/slide_1.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-50.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-50.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-50.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-03.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/slide_1.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-50.jpg);"></div>
+    <section class="nash">
+        <p>Наши преимущества</p>
+        <h1>Только высокое качество</h1>
+        <div class="nashContBox">
+            <div class="nashBox">
+                <div class="wrapper">
+
+                    <ul id="sb-slider" class="sb-slider">
+                        <li>
+                            <a href="http://www.flickr.com/photos/strupler/2969141180" target="_blank"><img src="img/photo_2024-08-08_22-09-03.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3>Creative Lifesaver</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank"><img src="img/photo_2024-08-08_22-09-50.jpg" alt="image2"/></a>
+                            <div class="sb-description">
+                                <h3>Honest Entertainer</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank"><img src="libiray/images/3.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3>Brave Astronaut</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank"><img src="libiray/images/4.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3>Affectionate Decision Maker</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank"><img src="libiray/images/5.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3>Faithful Investor</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank"><img src="libiray/images/6.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3>Groundbreaking Artist</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank"><img src="libiray/images/7.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3>Selfless Philantropist</h3>
+                            </div>
+                        </li>
+                    </ul>
+    
+                    <div id="shadow" class="shadow"></div>
+    
+                    <div id="nav-arrows" class="nav-arrows">
+                        <a href="#">Next</a>
+                        <a href="#">Previous</a>
                     </div>
+    
                 </div>
-                <div class="mySlides1 fade1">
-                    <div class="numbertext1">1 / 3</div>
-                    <div class="showSlideBox">
-                        <div class="showSlide" style="background-image: url(img/slide_1.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-03.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-50.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/slide_1.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-50.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-50.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-50.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-03.jpg);"></div>
-                    </div>
-                </div>
-                <div class="mySlides1 fade1">
-                    <div class="numbertext1">1 / 3</div>
-                    <div class="showSlideBox">
-                        <div class="showSlide" style="background-image: url(img/slide_1.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-03.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-50.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-50.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-50.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-03.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/photo_2024-08-08_22-09-50.jpg);"></div>
-                        <div class="showSlide" style="background-image: url(img/slide_1.jpg);"></div>
-                    </div>
-                </div>
-                <a class="prev1" onclick="plusSlides1(-1)">&#10094;</a>
-                <a class="next1" onclick="plusSlides1(1)">&#10095;</a>
             </div>
-            <br>
-            <div style="text-align:center;">
-                <span class="dot1" onclick="currentSlide1(1)"></span>
-                <span class="dot1" onclick="currentSlide1(2)"></span>
-                <span class="dot1" onclick="currentSlide1(3)"></span>
+            <div class="nashBox">
+                <div class="nashImg">
+                    <h1>ГИБКИЕ</h1>
+                    <p>Цены</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="95" height="81"
+                        viewBox="0 0 95 81" data-prefix="iblbds8ge">
+                        <g fill-rule="evenodd">
+                            <path
+                                d="M83.464 55.343a1.6 1.6 0 0 0 .853.892c.393.176.833.184 1.235.028l7.72-3.351 1.29 2.955-7.781 3.376a5.079 5.079 0 0 1-1.831.351 4.796 4.796 0 0 1-4.397-2.886c-1.591.969-2.938 2.001-4.198 3.041v15.957a3.23 3.23 0 0 1-3.231 3.222H54.598a11.8 11.8 0 0 1-5.937 1.611c-.829 0-1.816-.135-2.787-.363a4.846 4.846 0 0 1-1.829.363c-2.101 0-4.584-.613-7.016-1.611H21.338c-1.732 0-3.141-1.446-3.141-3.222V59.373l-3.986-1.538-.109.283a4.807 4.807 0 0 1-2.561 2.676 4.856 4.856 0 0 1-1.956.414c-.592 0-1.185-.11-1.753-.329l-7.847-3.433 1.3-2.951 7.781 3.406c.336.13.774.121 1.169-.055a1.6 1.6 0 0 0 .853-.891l6.999-18.031a1.59 1.59 0 0 0-.028-1.232 1.604 1.604 0 0 0-.893-.851L3.418 31.535l1.167-3.005 13.612 5.254V3.209a3.23 3.23 0 0 1 3.231-3.222h51.691a3.235 3.235 0 0 1 3.236 3.227v28.96l13.612-5.256 1.167 3.006-13.746 5.306a1.597 1.597 0 0 0-.894.851 1.591 1.591 0 0 0-.029 1.232l6.999 18.03zm-10.34 20.363V62.504c-2.654 2.254-5.413 4.292-9.605 5.456a11.06 11.06 0 0 1-3.893 7.001l-.895.745h14.393zm-29.079 1.611c.892 0 1.616-.723 1.616-1.611 0-.506-.242-.987-.646-1.289l-9.876-7.387a5.018 5.018 0 0 0-2.983-.991 2.65 2.65 0 0 0-2.65 2.643c0 2.71 8.296 8.635 14.539 8.635zm-22.617-1.611h9.816c-2.9-2.133-4.969-4.681-4.969-7.024 0-.651.132-1.267.329-1.853-1.756-1.748-3.066-3.351-4.015-4.962a3.377 3.377 0 0 0-1.161-1.197v15.036zm-6.05-20.875l6.732 2.596c1.366.529 2.494 1.5 3.265 2.807.738 1.253 1.748 2.522 3.1 3.911 1.011-.817 2.281-1.328 3.681-1.328 1.764 0 3.512.581 4.922 1.636l9.875 7.387a4.847 4.847 0 0 1 1.939 3.866c0 .566-.117 1.102-.297 1.607.021.001.046.004.066.004 1.99 0 3.925-.699 5.452-1.97l3.445-2.862a7.863 7.863 0 0 0 2.85-6.067 7.837 7.837 0 0 0-2.098-5.355 92.195 92.195 0 0 0-6.669-6.429l-5.644 3.19a13.77 13.77 0 0 1-6.75 1.771c-2.699 0-4.895-2.19-4.895-4.882 0-1.497.672-2.89 1.844-3.818a119.053 119.053 0 0 1 4.814-3.616c-2.957-1.426-5.783-2.183-8.273-2.183-3.573 0-7.734-.782-12.662-2.366l-4.697 12.101zm58.074-16.354a4.819 4.819 0 0 1-.296-1.436h-.032v-.417-.006V3.214l-51.696-.005v35.124h-.029a4.946 4.946 0 0 1-.193 1.378c4.54 1.45 8.329 2.163 11.531 2.163 3.441 0 7.33 1.162 11.299 3.343 4.123-2.68 8.498-4.954 11.489-4.954 2.179 0 3.883.472 5.385.887 1.344.373 2.614.724 4.137.724 3.358 0 6.61-1.362 8.753-2.501l-.348-.896zm1.522 3.92c-2.671 1.383-6.181 2.699-9.927 2.699-1.963 0-3.508-.428-5-.84-1.432-.397-2.783-.771-4.522-.771-2.937 0-9.574 3.806-17.32 9.934a1.641 1.641 0 0 0-.622 1.294c0 .916.746 1.66 1.664 1.66 1.804 0 3.588-.467 5.158-1.353l11.262-6.367 1.594 2.804-2.646 1.495a93.187 93.187 0 0 1 6.063 5.92 11.008 11.008 0 0 1 2.807 5.749c3.669-1.204 6.05-3.263 8.744-5.603 1.973-1.714 4.18-3.628 7.119-5.352l-4.374-11.269zM61.008 28.986c-3.118 0-5.655 2.168-5.655 4.833h-3.23c0-4.441 3.986-8.055 8.885-8.055 4.898 0 8.885 3.614 8.885 8.055h-3.231c0-2.665-2.537-4.833-5.654-4.833zm0-6.444c-3.118 0-5.655-2.53-5.655-5.639v-3.222c0-3.109 2.537-5.639 5.655-5.639 3.117 0 5.654 2.53 5.654 5.639v3.222c0 3.109-2.537 5.639-5.654 5.639zm2.423-8.861a2.422 2.422 0 0 0-2.423-2.416 2.422 2.422 0 0 0-2.423 2.416v3.222a2.423 2.423 0 1 0 4.846 0v-3.222zm-37.156 4.028h25.848v3.222H26.275v-3.222zm19.386-8.055h3.231v3.222h-3.231V9.654zm-19.386 0H42.43v3.222H26.275V9.654zm19.386 19.332H26.275v-3.222h19.386v3.222zm3.231 8.055H26.275v-3.222h22.617v3.222z"
+                                class="path-i3rrf25c8"></path>
+                            <path
+                                d="M76.465 37.313a1.591 1.591 0 0 1 .029-1.232c.173-.393.49-.695.894-.851l-.923 2.083zm-3.341 41.615H54.15l18.974-3.222v-16.72h3.231v16.72a3.23 3.23 0 0 1-3.231 3.222zm.328-40.451a4.819 4.819 0 0 1-.296-1.436h-.032v-.417-.006V3.214l-51.696-.005v35.124h-.007a4.81 4.81 0 0 1-.321 1.755l-.777-1.755h-2.126V3.209a3.23 3.23 0 0 1 3.231-3.222h51.691a3.235 3.235 0 0 1 3.236 3.227v33.827h-2.266l-.637 1.436zm-56.286-1.636c.402.156.719.458.893.851.175.393.184.831.028 1.232l-.921-2.083zm4.262 23.829c.467.283.863.688 1.161 1.197l-1.161-1.013v14.852h15.863v3.222H21.338c-1.732 0-3.141-1.446-3.141-3.222V58.267h3.231v2.403zm4.847-26.851h22.617v3.222H26.275v-3.222zm0-4.833v-3.222h19.386v3.222H26.275zm0-19.332H42.43v3.222H26.275V9.654zm22.617 0v3.222h-3.231V9.654h3.231zm3.231 11.277H26.275v-3.222h25.848v3.222zm3.23-4.028v-3.222c0-3.109 2.537-5.639 5.655-5.639 3.117 0 5.654 2.53 5.654 5.639v3.222c0 3.109-2.537 5.639-5.654 5.639-3.118 0-5.655-2.53-5.655-5.639zm8.078 0v-3.222a2.422 2.422 0 0 0-2.423-2.416 2.422 2.422 0 0 0-2.423 2.416v3.222a2.423 2.423 0 1 0 4.846 0zm6.462 16.916h-3.231c0-2.665-2.537-4.833-5.654-4.833-3.118 0-5.655 2.168-5.655 4.833h-3.23c0-4.441 3.986-8.055 8.885-8.055 4.898 0 8.885 3.614 8.885 8.055z"
+                                class="path-izxcua8jk"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="nashImg">
+                    <h1>БЫСТРО</h1>
+                    <p>Все точно в срок</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="87" height="88"
+                        viewBox="0 0 87 88" data-prefix="iimxxtsjb">
+                        <g fill-rule="evenodd">
+                            <path
+                                d="M83.479 29.322l-2.973-1.23c4.036-9.906 4.08-17.88.118-21.879-.962-.972-2.166-1.715-3.576-2.211l1.06-3.055c1.873.658 3.484 1.662 4.792 2.981 4.992 5.039 5.198 14.057.579 25.394zM67.968 3.517L67.51.315c2.285-.334 4.437-.397 6.389-.184l-.342 3.217c-1.689-.183-3.564-.125-5.589.169zM57.5 3.116a50.855 50.855 0 0 1 5.978-1.981l.803 3.134a48.011 48.011 0 0 0-5.601 1.855L57.5 3.116zm11.584 23.78l1.607 2.803-5.322 3.094-1.607-2.803 5.322-3.094zm4.85 15.178v3.235h-6.429v-3.235h6.429zm-10.15 15.335l1.607-2.803 5.298 3.079-1.607 2.803-5.298-3.079zm16.578-13.718c0 14.405-8.381 27.647-21.352 33.739l-1.359-2.932c11.844-5.563 19.497-17.655 19.497-30.807 0-18.734-15.141-33.975-33.75-33.975a33.458 33.458 0 0 0-18.046 5.261l-1.723-2.734A36.685 36.685 0 0 1 43.398 6.48c20.383 0 36.964 16.692 36.964 37.211zM18.718 7.756a43.573 43.573 0 0 1 5.858-3.435l1.393 2.917a40.226 40.226 0 0 0-5.421 3.179l-1.83-2.661zm2.717 10.136a34.333 34.333 0 0 0-2.14 2.019l-2.301-2.259a37.374 37.374 0 0 1 2.344-2.212l2.097 2.452zM4.369 34.05l-3.123-.768C3.35 24.619 7.99 16.9 14.665 10.957l2.128 2.424A40.295 40.295 0 0 0 4.369 34.05zM6 59.283a47.383 47.383 0 0 0-1.81 5.621l-3.117-.79a51.01 51.01 0 0 1 1.932-6.007L6 59.283zM3.327 74.079l-3.196.351c-.213-1.977-.153-4.152.178-6.467l3.182.461c-.293 2.046-.348 3.95-.164 5.655zm29.25-52.495l-2.784 1.618-3.07-5.351 2.784-1.618 3.07 5.351zm.016 44.203l-3.087 5.383-2.785-1.617 3.087-5.384 2.785 1.618zM27.787 77.43C14.815 71.338 6.434 58.096 6.434 43.691c0-7.838 2.394-15.338 6.923-21.686l2.612 1.886c-4.136 5.797-6.32 12.643-6.32 19.8 0 13.152 7.652 25.244 19.497 30.807l-1.359 2.932zm-4.753-47.44l-1.607 2.803-5.322-3.094 1.607-2.803 5.322 3.094zm-.022 27.419l-5.298 3.079-1.607-2.803 5.298-3.079 1.607 2.803zM12.863 42.074h6.428v3.235h-6.428v-3.235zm32.142-27.505v29.792l-12.684 12.77-2.273-2.288 11.743-11.821V14.569h3.214zm12.284 1.664l2.785 1.618-3.07 5.351-2.784-1.618 3.069-5.351zM6.182 81.179c6.815 6.996 25.034 1.068 43.146-13.752l-6.068-1.139.59-3.182 10.966 2.06-1.761 10.978-3.173-.515.829-5.166C37.213 81.391 24.092 87.368 14.539 87.368c-4.418 0-8.072-1.275-10.652-3.923-1.299-1.332-2.285-2.939-2.932-4.773l3.029-1.081c.49 1.386 1.229 2.595 2.198 3.588zm61.896-1.553a43.351 43.351 0 0 1-5.857 3.435l-1.394-2.916a40.164 40.164 0 0 0 5.421-3.179l1.83 2.66zm14.35-26.294l3.123.768c-2.105 8.663-6.744 16.383-13.419 22.325l-2.128-2.423c6.18-5.503 10.476-12.651 12.424-20.67z"
+                                class="path-i9rtv1tnw"></path>
+                            <path
+                                d="M72.132 76.425l-2.128-2.423c6.18-5.503 10.476-12.651 12.424-20.67l3.123.768c-2.105 8.663-6.744 16.383-13.419 22.325zM59.01 77.43l-1.359-2.932c11.844-5.563 19.497-17.655 19.497-30.807 0-18.734-15.141-33.975-33.75-33.975a33.458 33.458 0 0 0-18.046 5.261l-1.723-2.734A36.685 36.685 0 0 1 43.398 6.48c20.383 0 36.964 16.692 36.964 37.211 0 14.405-8.381 27.647-21.352 33.739zM18.718 7.756a43.573 43.573 0 0 1 5.858-3.435l1.393 2.917a40.226 40.226 0 0 0-5.421 3.179l-1.83-2.661zm2.717 10.136a34.333 34.333 0 0 0-2.14 2.019l-2.301-2.259a37.374 37.374 0 0 1 2.344-2.212l2.097 2.452zM4.369 34.05l-3.123-.768C3.35 24.619 7.99 16.9 14.665 10.957l2.128 2.424A40.295 40.295 0 0 0 4.369 34.05zM6 59.283a47.383 47.383 0 0 0-1.81 5.621l-3.117-.79a51.01 51.01 0 0 1 1.932-6.007L6 59.283zM3.327 74.079l-3.196.351c-.213-1.977-.153-4.152.178-6.467l3.182.461c-.293 2.046-.348 3.95-.164 5.655zm25.819.419l-1.359 2.932C14.815 71.338 6.434 58.096 6.434 43.691c0-7.838 2.394-15.338 6.923-21.686l2.612 1.886c-4.136 5.797-6.32 12.643-6.32 19.8 0 13.152 7.652 25.244 19.497 30.807zM6.182 81.179c6.815 6.996 25.034 1.068 43.146-13.752l-6.068-1.139.59-3.182 10.966 2.06-1.761 10.978-3.173-.515.829-5.166C37.213 81.391 24.092 87.368 14.539 87.368c-4.418 0-8.072-1.275-10.652-3.923-1.299-1.332-2.285-2.939-2.932-4.773l3.029-1.081c.49 1.386 1.229 2.595 2.198 3.588zm61.896-1.553a43.351 43.351 0 0 1-5.857 3.435l-1.394-2.916a40.164 40.164 0 0 0 5.421-3.179l1.83 2.66z"
+                                class="path-ix004ohoj"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="nashImg">
+                    <h1>ГАРАНТИЯ</h1>
+                    <p>Качества</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="90" height="89"
+                        viewBox="0 0 90 89" data-prefix="ip3q3ciuo">
+                        <g fill-rule="evenodd">
+                            <path
+                                d="M81.774 59.595v-3.222h8.017v3.222h-8.017zm-4.811 1.611h3.207v8.055h-3.207v-8.055zm0-14.499h3.207v8.055h-3.207v-8.055zm-9.62 9.666h8.017v3.222h-8.017v-3.222zm5.527-30.779c-3.045 1.53-6.037 3.145-7.607 4.653C63.687 37.761 58.231 43.669 51 45.821l5.044 16.996h6.489c1.395 0 2.621.895 3.05 2.23l6.403 19.299a3.219 3.219 0 0 1-3.04 4.248H20.844a3.219 3.219 0 0 1-3.207-3.222c0-.35.055-.693.164-1.02l6.414-19.332a3.203 3.203 0 0 1 3.043-2.203h6.363l5.198-17.024c-7.134-2.189-12.642-8.13-14.265-15.521-1.563-1.515-4.572-3.14-7.634-4.678-5.184-2.606-7.3-5.357-7.3-9.496 0-7.135 5.183-9.667 9.621-9.667 1.805 0 3.468.611 4.81 1.627V3.209a3.219 3.219 0 0 1 3.207-3.222h35.275a3.22 3.22 0 0 1 3.207 3.222v4.849a7.939 7.939 0 0 1 4.81-1.627c4.437 0 9.62 2.532 9.62 9.667 0 4.139-2.115 6.89-7.3 9.496zm-48.819.17V14.486c0-2.665-2.158-4.832-4.81-4.832-1.93 0-6.414.627-6.414 6.444 0 2.43.905 4.291 5.527 6.613 2.225 1.118 4.135 2.145 5.701 3.151 0-.033-.004-.065-.004-.098zm3.207 40.275l-1.07 3.222h23.517v3.222H25.119l-4.277 12.889h48.107l-4.277-12.889h-5.346v-3.222h4.277l-1.066-3.209-35.279-.013zm9.718-3.222h15.722l-4.847-16.335c-.967.133-1.947.225-2.956.225-.997 0-1.97-.095-2.93-.232l-4.989 16.342zM62.533 3.209H27.258v3.222h20.844v3.223H27.258v16.11c0 9.936 7.747 17.721 17.637 17.721S62.533 35.7 62.533 25.764V3.209zm8.017 6.445c-2.653 0-4.81 2.167-4.81 4.832v11.278c0 .033-.004.065-.004.098 1.565-1.006 3.475-2.033 5.7-3.151 4.622-2.322 5.527-4.183 5.527-6.613 0-5.817-4.484-6.444-6.413-6.444zM50.891 38.956l-1.334-2.93a11.265 11.265 0 0 0 6.388-8.272l3.157.563a14.483 14.483 0 0 1-8.211 10.639zm.418-32.525h3.207v3.223h-3.207V6.431zM41.77 39.922l.689-3.147c1.085.241 2.226.323 3.315.231l.256 3.213a14.502 14.502 0 0 1-4.26-.297zm11.142 29.339h3.207v3.222h-3.207v-3.222zM0 43.485h8.017v3.222H0v-3.222zm12.827-1.611H9.62v-8.055h3.207v8.055zm0 14.499H9.62v-8.055h3.207v8.055zm9.62-9.666H14.43v-3.222h8.017v3.222z"
+                                class="path-ix94g0c0q"></path>
+                            <path
+                                d="M81.774 59.595v-3.222h8.017v3.222h-8.017zm-4.811 1.611h3.207v8.055h-3.207v-8.055zm0-14.499h3.207v8.055h-3.207v-8.055zm-9.62 9.666h8.017v3.222h-8.017v-3.222zM50.891 38.956l-1.334-2.93a11.265 11.265 0 0 0 6.388-8.272l3.157.563a14.483 14.483 0 0 1-8.211 10.639zm.418-32.525h3.207v3.223h-3.207V6.431zm-25.655 0h22.448v3.223H25.654V6.431zm-10.88 36.942h8.017v3.222h-8.017v-3.222zm-4.811 4.833h3.207v8.055H9.963v-8.055zm0-14.499h3.207v8.055H9.963v-8.055zm-9.62 9.666H8.36v3.222H.343v-3.222zm45.431-6.367l.256 3.213a14.502 14.502 0 0 1-4.26-.297l.689-3.147c1.085.241 2.226.323 3.315.231z"
+                                class="path-in4ulj23c"></path>
+                        </g>
+                    </svg>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- -------------------------------------------- Content2 ------------------------------------------------ -->
-    <div class="content4">
-        <div class="box4_1">
-            <h1>Отвечаем, опережая ваши вопросы</h1>
-            <div class="linkBox">
-                <div>
-                    <h2>+(998)91 409-34-74</h2>
-                    <h2>+(998)91 829-76-37</h2>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="img/telegram.png" alt="Error">
-                    </a>
-                    <a href="">
-                        <img class="insta" src="img/instagram.png" alt="Error">
-                    </a>
-                    <a href="">
-                        <img src="img/email.png" alt="Error">
-                    </a>
-                </div>
-            </div>
-            <div class="btnBox1">
-                <h4>Или задайте вопрос на сайте и мы Вам перезвоним</h4>
-                <button id="btn3" class="btn3">Задать вопрос</button>
+    </section>
+    <section class="products">
+        <div class="productsBox">
+            <div class="productsImg"></div>
+            <div class="productsText">
+                <h4>Name products</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quasi repudiandae vero nisi explicabo accusantium!</p>
             </div>
         </div>
-        <div class="box4_2">
-            <div class="dr drop">Какие данные нужны для расчета стоимости перевозки? <i
-                    class="fa fa-angle-double-down fa-lg" aria-hidden="true"></i></div>
-            <div class="dw down">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, fugit, magnam
-                    mollitia
-                    ducimus nesciunt temporibus dignissimos maxime voluptatem inventore repellendus a
-                    voluptate
-                    beatae harum exercitationem rerum, perspiciatis deleniti. Ut, consectetur!</p>
-            </div>
-            <div class="dr drop-1">Как рассчитать объем груза? <i class="fa fa-angle-double-down fa-lg"
-                    aria-hidden="true"></i></div>
-            <div class="dw down-1">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, fugit, magnam
-                    mollitia
-                    ducimus nesciunt temporibus dignissimos maxime voluptatem inventore repellendus a
-                    voluptate
-                    beatae harum exercitationem rerum, perspiciatis deleniti. Ut, consectetur!</p>
-            </div>
-            <div class="dr drop-2">Как и когда осуществляется оплата? <i class="fa fa-angle-double-down fa-lg"
-                    aria-hidden="true"></i></div>
-            <div class="dw down-2">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, fugit, magnam
-                    mollitia
-                    ducimus nesciunt temporibus dignissimos maxime voluptatem inventore repellendus a
-                    voluptate
-                    beatae harum exercitationem rerum, perspiciatis deleniti. Ut, consectetur!</p>
-            </div>
-            <div class="dr drop-3">Можем ли мы получить разовую консультацию? <i class="fa fa-angle-double-down fa-lg"
-                    aria-hidden="true"></i></div>
-            <div class="dw down-3">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, fugit, magnam
-                    mollitia
-                    ducimus nesciunt temporibus dignissimos maxime voluptatem inventore repellendus a
-                    voluptate
-                    beatae harum exercitationem rerum, perspiciatis deleniti. Ut, consectetur!</p>
-            </div>
-            <div class="dr drop-4">Какие документы требуются для таможенного оформления? <i
-                    class="fa fa-angle-double-down fa-lg" aria-hidden="true"></i></div>
-            <div class="dw down-4">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, fugit, magnam
-                    mollitia
-                    ducimus nesciunt temporibus dignissimos maxime voluptatem inventore repellendus a
-                    voluptate
-                    beatae harum exercitationem rerum, perspiciatis deleniti. Ut, consectetur!</p>
-            </div>
-            <div class="dr drop-5">Есть ли у вас собственные склады консолидации? <i
-                    class="fa fa-angle-double-down fa-lg" aria-hidden="true"></i></div>
-            <div class="dw down-5">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, fugit, magnam
-                    mollitia
-                    ducimus nesciunt temporibus dignissimos maxime voluptatem inventore repellendus a
-                    voluptate
-                    beatae harum exercitationem rerum, perspiciatis deleniti. Ut, consectetur!</p>
-            </div>
-            <div class="dr drop-6"></div>
-        </div>
-    </div>
-    <!-- -------------------------------------------- O kompanie ------------------------------------------------ -->
-    <div class="komp">
-    <div class="kompBox">
-        <h1>О нашей компании</h1>
-        <p>Будьте уверены, что вы <b>обращаетесь к фанатам своего дела</b></p>
-        <p style="margin-top: 100px;">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae facere autem quia libero velit molestiae deleniti. Obcaecati inventore error quidem consequatur excepturi est. Ea neque voluptas doloremque, perspiciatis eum sapiente.
-        </p>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae facere autem quia libero velit molestiae deleniti. Obcaecati inventore error quidem consequatur excepturi est. Ea neque voluptas doloremque, perspiciatis eum sapiente.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae facere autem quia libero velit molestiae deleniti. Obcaecati inventore error quidem consequatur excepturi est. Ea neque voluptas doloremque, perspiciatis eum sapiente.
-        </p>
-        <div class="kompFlex">
-            <div class="svg">
-                <img src="svg/ic17.svg" alt="Error">
-                <h2>Профессионально</h2>
-            </div>
-            <div class="svg">
-                <img src="svg/ic11.svg" alt="Error">
-                <h2>Выгодно</h2>
-            </div>
-            <div class="svg">
-                <img src="svg/i22.svg" alt="Error">
-                <h2>Удобно</h2>
-            </div>
-            <div class="svg">
-                <img src="svg/i4.svg" alt="Error">
-                <h2>Доступно</h2>
-            </div>
-        </div>
-    </div>
-</div>
-    <!-- -------------------------------------------- Footer ------------------------------------------------ -->
-    <footer>
-    <h1>Мы всегда на связи</h1>
-    <p>Телефон горячей линии:</p>
-    <h2>+998(94)320 94 99</h2>
-    <h2>+998(94)320 94 99</h2>
-    <a href="">test@gmail.com</a>
-    <i class="fa fa-telegram fa-lg" aria-hidden="true"></i>
-    <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-    <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
-    <p style="margin-top: 20px;">Адрес офиса:</p>
-    <h3>г. Бухара,  проспект, дом</h3>
-</footer>
-    <script>
-        var typed = new Typed('#typed', {
-            strings: ['Угловую защиту', 'Дверная пластину', 'Столешницу'],
-            typeSpeed: 50,
-            backSpeed: 50,
-            backDelay: 2000,
-            loop: true
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $(".down").hide();
-            $(".drop").click(function () {
-                $(".down").slideToggle(1000);
-            });
-            $(".down-1").hide();
-            $(".drop-1").click(function () {
-                $(".down-1").slideToggle(1000);
-            });
-            $(".down-2").hide();
-            $(".drop-2").click(function () {
-                $(".down-2").slideToggle(1000);
-            });
-            $(".down-3").hide();
-            $(".drop-3").click(function () {
-                $(".down-3").slideToggle(1000);
-            });
-            $(".down-4").hide();
-            $(".drop-4").click(function () {
-                $(".down-4").slideToggle(1000);
-            });
-            $(".down-5").hide();
-            $(".drop-5").click(function () {
-                $(".down-5").slideToggle(1000);
-            });
-        });
-    </script>
+    </section>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="libiray/js/jquery.slicebox.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$shadow.show();
+
+							},
+							orientation : 'r',
+							cuboidsRandom : true,
+							disperseFactor : 30
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+		</script>
     <script src="script.js"></script>
-    <script type="module" src="db.js"></script>
+    <!-- <script src="jquery-2.2.0.min.js" type="text/javascript"></script> -->
+    <!-- <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
+    <!-- <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".center").slick({
+                dots: false,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 5,
+                slidesToScroll: 15,
+                autoplay : true,
+                autoplaySpeed: 500,
+                arrows: false,
+                pauseOnHover: false,
+                responsive : [{
+                    breakpoint: 768,
+                    settings:{
+                        slidesToShow: 4
+                    }
+                },{
+                    breakpoint:520,
+                    settings:{
+                        slidesToShow:3
+                    }
+                }]
+            });
+        });
+    </script> -->
 </body>
 
 </html>
