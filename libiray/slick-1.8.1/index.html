@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Slick Playground</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <style type="text/css">
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+      width: 100%;
+      /* border: 2px solid red; */
+      color: white;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    /* .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    } */
+
+    h2{
+      margin: 5px 0px;
+      padding: 10px;
+    }
+    b{
+      padding: 10px 20px;
+      /* border: 2px solid white; */
+      background-color: rgb(0, 0, 0,0);
+    color: white;
+    background: linear-gradient(rgb(3,15,28), rgb(0, 21, 44)) padding-box,
+    linear-gradient(45deg, rgb(255, 80, 243), rgb(0, 195, 255)) border-box;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    }
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+      border-radius: 30px;
+    }
+
+    .slick-active {
+      opacity: .3;
+    }
+
+    .slick-current {
+      opacity: 1;
+    
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <section class="vertical-center-3 slider">
+    <div>
+      <h2><b>Name Lorem lor sit amet</b></h2>
+    </div>
+    <div>
+      <h2><b>Name</b></h2>
+    </div>
+    <div>
+      <h2><b>Name Lorem ipsum dolor sit</b></h2>
+    </div>
+    <div>
+      <h2><b>Namepsum dolor sit ameectetur</b></h2>
+    </div>
+    <div>
+      <h2><b>Name Lorem ipsur sit amet</b></h2>
+    </div>
+    <div>
+      <h2><b>Name Lorem ipsum doons</b></h2>
+    </div>
+    <div>
+      <h2><b>Name Lorem ipsum dolor </b></h2>
+    </div>
+    <div>
+      <h2><b>Name Loreit amet consectetur</b></h2>
+    </div>
+    <div>
+      <h2><b>Name Lorem ipsum dolor </b></h2>
+    </div>
+    <div>
+      <h2><b>Name Lorem dolor stur</b></h2>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function () {
+      $(".vertical-center-3").slick({
+        dots: false,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 3,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+      });
+    });
+  </script>
+  <!-- <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".center").slick({
+                dots: false,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 5,
+                slidesToScroll: 15,
+                autoplay : true,
+                autoplaySpeed: 500,
+                arrows: false,
+                pauseOnHover: false,
+                responsive : [{
+                    breakpoint: 768,
+                    settings:{
+                        slidesToShow: 4
+                    }
+                },{
+                    breakpoint:520,
+                    settings:{
+                        slidesToShow:3
+                    }
+                }]
+            });
+        });
+    </script> -->
+
+</body>
+
+</html>
