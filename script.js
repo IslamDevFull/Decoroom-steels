@@ -15,4 +15,12 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-
+// /////////////////////////////////////////////////// Preloader //////////////////////////////////////////////////
+document.body.onload = ()=>{
+  setTimeout(()=>{
+    var preloader = document.getElementById('pageLoader');
+    if(!preloader.classList.contains('done')){
+      preloader.classList.add('done');
+    }
+  },4000)
+}
