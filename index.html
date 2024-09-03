@@ -6,43 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./libiray/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./libiray/slick-1.8.1/slick/slick-theme.css">
     <title>Decoroom steel</title>
 </head>
 
 <body>
-<!-- -------------------------------------------- Preloader ------------------------------------------------ -->
+    <!-- -------------------------------------------- Preloader ------------------------------------------------ -->
     <div class="preloader" id="pageLoader">
         <div class="loader">
             <h1>Decoroom steel</h1>
         </div>
     </div>
-<!-- -------------------------------------------- Menyu ------------------------------------------------ -->
+    <!-- -------------------------------------------- Menyu ------------------------------------------------ -->
     <nav id="nav">
         <div class="navBox">
             <div class="logo"></div>
             <h3>Decoroom Steel</h3>
         </div>
-        <div class="navBox">
+        <div class="navBox navnon">
             <ul>
-                <li>Главная</li>
-                <li>Наши работы</li>
-                <li>О компании</li>
-                <li>Контакты</li>
+                <li id="lan">Главная</li>
+                <li id="lan1">Наши работы</li>
+                <li id="lan2">О компании</li>
+                <li id="lan3">Контакты</li>
             </ul>
         </div>
-        <div class="navBox">
-            <button class="btn1">Наш магазин</button>
-            <button class="btn2">Обратная связь</button>
+        <div class="phon"><i onclick="document.getElementById('downPhon').classList.toggle('show');" class="fa fa-phone" aria-hidden="true"></i>
+            <div class="downPhon" id="downPhon">
+                <a href="tel: +998882243000"><i class="fa fa-phone" aria-hidden="true"></i> +998(88) 224-30-00</a>
+                <a href="tel: +998973001331"><i class="fa fa-phone" aria-hidden="true"></i> +998(97) 300-13-31</a>
+            </div>
+        </div>
+        <div class="dropLan"><i onclick="document.getElementById('lanDown').classList.toggle('show');" class="fa fa-language" aria-hidden="true"></i>
+            <div class="lanDown" id="lanDown">
+                <a id="uz">UZ</a>
+                <a id="ru">RU</a>
+                <a id="eng">ENG</a>
+            </div>    
+        </div>
+        <div class="navBox navnon1">
+            <button class="btn1" id="lan4">Наш магазин</button>
+            <button class="btn2" id="lan5">Обратная связь</button>
         </div>
         <span class="spanchik" onclick="openNav()">&#9776;</span>
     </nav>
     <!-- -------------------------------------------- Menyu left drop ------------------------------------------------ -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Главная</a>
-        <a href="">Наши работы</a>
-        <a href="">О компании</a>
-        <a href="">Контакты</a>
+        <a id="lan_1" href="index.html">Главная</a>
+        <a id="lan1_1" href="">Наши работы</a>
+        <a id="lan2_1" href="">О компании</a>
+        <a id="lan3_1" href="">Контакты</a>
         <div class="leftContact">
             <h3><a href="tel: +998882243000">+998(88) 224-30-00</a></h3>
             <h3><a href="tel: +998973001331">+998(97) 300-13-31</a></h3>
@@ -51,20 +66,21 @@
             <div class="leftContact2">
                 <i class="fa fa-telegram fa-lg" aria-hidden="true"></i>
                 <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-                <p style="margin-top: 20px;">Адрес офиса:</p>
-                <h4>Узбекистан, P9XV+JV8, Buxoro, Buxoro Viloyati</h4>
+                <p id="lan4_1" style="margin-top: 20px;">Адрес офиса:</p>
+                <h4 id="lan5_1">Узбекистан, P9XV+JV8, Buxoro, Buxoro Viloyati</h4>
             </div>
         </div>
     </div>
     <!-- -------------------------------------------- Header ------------------------------------------------ -->
     <header>
-        <h1>СТАЛЬ – ЭТО НЕ ПРОСТО СПЛАВ,<br>ЭТО НАШЕ ПРИЗВАНИЕ.</h1>
-        <button>Узнать цену</button>
+        <h1 id="lan6">Нержавеющая сталь</h1> 
+        <h2 id="lan7">Инновации, Надежность, Долговечность</h2>
+        <button id="lan8">Узнать цену</button>
     </header>
 
     <!-- -------------------------------------------- О нашей компании ------------------------------------------------ -->
     <div class="fon">
-        <h6>О Компании</h6>
+        <h6 id="lan9">О Компании</h6>
         <div class="oNas">
             <div class="social">
                 <div class="social-icon">
@@ -79,7 +95,7 @@
                     </div>
                 </div>
                 <h3 class="counter" data-count="15">0</h3>
-                <p>Год основания биржи</p>
+                <p id="lan10">Год основания биржи</p>
             </div>
             <div class="social">
                 <div class="social-icon">
@@ -94,7 +110,7 @@
                     </div>
                 </div>
                 <h3 class="counter" data-count="589">0</h3>
-                <p>Клиентов в год</p>
+                <p id="lan11">Клиентов в год</p>
             </div>
             <div class="social">
                 <div class="social-icon">
@@ -109,7 +125,7 @@
                     </div>
                 </div>
                 <h3 class="counter" data-count="8">0</h3>
-                <p>Лет средний опыт работы специалистов</p>
+                <p id="lan12">Лет средний опыт работы специалистов</p>
             </div>
             <div class="social">
                 <div class="social-icon">
@@ -124,31 +140,91 @@
                     </div>
                 </div>
                 <h3 class="counter" data-count="5850">0</h3>
-                <p>Выполненных заказов</p>
+                <p id="lan13">Выполненных заказов</p>
             </div>
         </div>
         <div class="oNasSlide">
             <div class="oNasSlidebox1">
-                <iframe src="libiray/slick-1.8.1/index.html" frameborder="0"></iframe>
+                <section class="vertical-center-3 sliderNas">
+                    <div>
+                      <h2><b id="lan15">Искусство металла для вашего пространства</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan16">Каждая деталь – отражение вашего стиля</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan17">Создаем шедевры из прочного металла</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan18">Металл, который говорит сам за себя</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan19">Стиль и функциональность в каждом изделии</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan20">Мы воплощаем ваши идеи в жизнь</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan21">Креативные решения для смелых проектов </b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan22">Индивидуальность в каждой линии</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan23">Ваше пространство – наш металл</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan24">Надежность и элегантность в каждом изделии</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan25">Когда металл встречается с искусством</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan26">Превращаем металл в стильные решения</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan27">Создаем больше, чем просто изделия</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan28">Ваши мечты – наша реальность</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan29">Строим будущее с металлом</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan30">Дизайн, который впечатляет</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan31">Металл, который вдохновляет</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan32">Кузница ваших самых смелых идей</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan33">Стильные решения для любого пространства</b></h2>
+                    </div>
+                    <div>
+                      <h2><b id="lan34">Мы создаем изделия, которые оставляют след</b></h2>
+                    </div>
+                  </section>
             </div>
             <div class="oNasSlidebox2">
-                <h1> Мы создаем изделия, которые выдержат испытание временем и станут важной частью вашего пространства.
+                <h1 id="lan14"> Мы создаем изделия, которые выдержат испытание временем и станут важной частью вашего пространства.
                     В DECOOROM STEEL мы верим, что дизайн должен быть не только красивым, но и практичным. </h1>
             </div>
         </div>
-
         <!-- -------------------------------------------- Content ------------------------------------------------ -->
         <section class="nash">
-            <p>Наши преимущества</p>
-            <h1>Только высокое качество</h1>
+            <p id="lan35">Наши преимущества</p>
+            <h1 id="lan36">Только высокое качество</h1>
             <div class="nashContBox">
                 <div class="nashBox">
                     <iframe src="libiray/Slicebox/slide3d.html" frameborder="0"></iframe>
                 </div>
                 <div class="nashBox">
                     <div class="nashImg">
-                        <h1>ГИБКИЕ</h1>
-                        <p>Цены</p>
+                        <h1 id="lan37">ГИБКИЕ</h1>
+                        <p id="lan38">Цены</p>
                         <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="95" height="81"
                             viewBox="0 0 95 81" data-prefix="iblbds8ge">
                             <g fill-rule="evenodd">
@@ -162,8 +238,8 @@
                         </svg>
                     </div>
                     <div class="nashImg">
-                        <h1>БЫСТРО</h1>
-                        <p>Все точно в срок</p>
+                        <h1 id="lan39">БЫСТРО</h1>
+                        <p id="lan40">Все точно в срок</p>
                         <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="87" height="88"
                             viewBox="0 0 87 88" data-prefix="iimxxtsjb">
                             <g fill-rule="evenodd">
@@ -177,8 +253,8 @@
                         </svg>
                     </div>
                     <div class="nashImg">
-                        <h1>ГАРАНТИЯ</h1>
-                        <p>Качества</p>
+                        <h1 id="lan41">ГАРАНТИЯ</h1>
+                        <p id="lan42">Качества</p>
                         <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="90" height="89"
                             viewBox="0 0 90 89" data-prefix="ip3q3ciuo">
                             <g fill-rule="evenodd">
@@ -196,7 +272,7 @@
         </section>
         <!-- -------------------------------------------- Produkti ------------------------------------------------ -->
         <section class="products">
-            <h3>Наши продукты</h3>
+            <h3 id="lan43">Наши продукты</h3>
             <div class="images-slider">
                 <iframe src="libiray/animate/index.html" frameborder="0"></iframe>
             </div>
@@ -204,8 +280,8 @@
                 <div class="productsBox">
                     <div class="productsImg" style="background-image: url(img/carty1.png);"></div>
                     <div class="productsText">
-                        <h4>Cтеллажи из нержавеющей стали</h4>
-                        <p>
+                        <h4 id="lan44">Cтеллажи из нержавеющей стали</h4>
+                        <p id="lan45">
                             Закажите стеллажи из нержавеющей стали, которые станут стильным и практичным решением для
                             вашего интерьера. Прочные, долговечные и изготовленные по индивидуальным параметрам, наши
                             стеллажи идеально впишутся в любой дом.
@@ -215,8 +291,8 @@
                 <div class="productsBox">
                     <div class="productsImg" style="background-image: url(img/carty2.png);"></div>
                     <div class="productsText">
-                        <h4>Кресло</h4>
-                        <p>
+                        <h4 id="lan46">Кресло</h4>
+                        <p id="lan47">
                             Создайте неповторимую атмосферу уюта и стиля с нашим креслом из коллекции "Steel Comfort".
                             Идеальное сочетание минималистичного дизайна и максимального комфорта. Прочная рама из
                             нержавеющей стали обеспечивает долговечность, а мягкая обивка добавляет роскоши
@@ -226,8 +302,8 @@
                 <div class="productsBox">
                     <div class="productsImg" style="background-image: url(img/carty3.png);"></div>
                     <div class="productsText">
-                        <h4>Кухенная система</h4>
-                        <p>
+                        <h4 id="lan48">Кухенная система</h4>
+                        <p id="lan49">
                             Создайте стильный и функциональный центр вашего дома с нашей кухонной системой из коллекции
                             "Steel Gourmet". Этот минималистичный кухонный блок из нержавеющей стали и дерева идеально
                             сочетает в себе элегантный дизайн и практичность.
@@ -236,11 +312,138 @@
                 </div>
             </div>
         </section>
+        <!-- -------------------------------------------- Produkti ------------------------------------------------ -->
+        <section class="OProduc">
+            <h1 id="lan50">О нашей продукции</h1>
+            <div class="OProducBox">
+                <div class="oCol2 bloc">
+                    <h1 id="lan51_1">Перила</h1>
+                    <p id="lan52_1">
+                        Ограждения лестниц – обязательное условие для обеспечения безопасности. Среди большого
+                        ассортимента ограждающих конструкций широко востребованы лестничные перила и поручни из
+                        нержавеющей стали.
+                        Это прочный материал, позволяющий создавать стойкие и надежные конструкции, которые практически
+                        не нуждаются в уходе и последующем ремонте, при этом имеют красивые внешние данные и идеально
+                        дополняют различные интерьерные стили.
+                    </p>
+                </div>
+                <div class="oCol1">
+                    <iframe src="libiray/OProduc/index.html" frameborder="0"></iframe>
+                </div>
+                <div class="oCol2 none">
+                    <h1 id="lan51">Перила</h1>
+                    <p id="lan52">
+                        Ограждения лестниц – обязательное условие для обеспечения безопасности. Среди большого
+                        ассортимента ограждающих конструкций широко востребованы лестничные перила и поручни из
+                        нержавеющей стали.<br>
+                        Это прочный материал, позволяющий создавать стойкие и надежные конструкции, которые практически
+                        не нуждаются в уходе и последующем ремонте, при этом имеют красивые внешние данные и идеально
+                        дополняют различные интерьерные стили.
+                    </p>
+                </div>
+            </div>
+            <div class="OProducBox">
+                <div class="oCol2">
+                    <h1 id="lan53">Стулья</h1>
+                    <p id="lan54">
+                        Стулья из нержавеющей стали обладают исключительными эксплуатационными характеристиками. Стулья
+                        из нержавейки не ломаются под воздействием огромных нагрузок и служат потребителю
+                        неограниченно долго. Ухаживать за стульями из нержавейки несложно: она моется без всяких усилий
+                        с применением воды и тряпки.<br>
+                        Сиденья предлагаемых образцов могут быть мягкими либо изготовленными из дерева (у покупателя
+                        имеется шанс выбрать стулья из нержавейки в любом исполнении). Металлический каркас обеспечивает
+                        всей конструкции особую прочность.
+                    </p>
+                </div>
+                <div class="oCol1">
+                    <iframe src="libiray/OProduc1/index.html" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="OProducBox">
+                <div class="oCol2 bloc">
+                    <h1 id="lan55_1">Шкафчики</h1>
+                    <p id="lan56_1">
+                        Шкафы для заведений общепита — важный элемент правильной организации кухонного пространства.
+                        Такое нейтральное оборудование предназначено для хранения крупногабаритной посуды, пищевых
+                        продуктов, которые не требуют заморозки или охлаждения, кухонного инвентаря. Нейтральные шкафы
+                        могут использоваться как в горячем, так и в холодном цеху. В некоторых случаях их устанавливают
+                        в раздевалках и встраивают в раздаточную ленту или монтируют за барной стойкой. Мебель такой
+                        категории подходит для хранения продуктов и вещей. Благодаря своим свойствам, она защищает
+                        содержимое от жира, пара и образования конденсата, что актуально для кухонных помещений.
+                    </p>
+                </div>
+                <div class="oCol1">
+                    <iframe src="libiray/OProduc2/index.html" frameborder="0"></iframe>
+                </div>
+                <div class="oCol2 none">
+                    <h1 id="lan55">Шкафчики</h1>
+                    <p id="lan56">
+                        Шкафы для заведений общепита — важный элемент правильной организации кухонного пространства.
+                        Такое нейтральное оборудование предназначено для хранения крупногабаритной посуды, пищевых
+                        продуктов, которые не требуют заморозки или охлаждения, кухонного инвентаря. Нейтральные шкафы
+                        могут использоваться как в горячем, так и в холодном цеху.<br> В некоторых случаях их устанавливают
+                        в раздевалках и встраивают в раздаточную ленту или монтируют за барной стойкой. Мебель такой
+                        категории подходит для хранения продуктов и вещей. Благодаря своим свойствам, она защищает
+                        содержимое от жира, пара и образования конденсата, что актуально для кухонных помещений.
+                    </p>
+                </div>
+            </div>
+            <div class="OProducBox">
+                <div class="oCol2">
+                    <h1 id="lan57">Стол</h1>
+                    <p id="lan58">
+                        Стол для кухни предприятий общепита. Используется для приготовления
+                        продуктов тк нержавеющая сталь легко моется и обрабатывается, соответствует требованиям.<br>
+                        Сплошная полка в комплекте позволяет использовать место для дополнительного хранения (полка
+                        устанавливается на 15 см от пола, что позволяет хранить на ней продукты). Ножки имеют
+                        регулировочные винты для устойчивой установки на неровных поверхностях
+                    </p>
+                </div>
+                <div class="oCol1">
+                    <iframe src="libiray/OProduc3/index.html" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="OProducBox">
+                <div class="oCol2 bloc">
+                    <h1 id="lan59_1">Ванны моечные</h1>
+                    <p id="lan60_1">
+                        Кухонный инвентарь изготовлен из высокотехнологичной стали толщиной 1,2 мм – 1,5 мм с отличной
+                        эксплуатационной характеристикой материала. Металлическая ванна обладает долговечностью и
+                        высоким прочностным запасом, инвентарь прост в санитарно-гигиенической обработке и имеет
+                        солидный облик. Абсолютная пожарная безопасность, стойкость к влаге, плесени и грибку делает
+                        изделие безопасным для применения в местах большого скопления людей. <br>
+                        Моечные зоны являются неотъемлемой частью общественных учреждений: столовых, санаториев,
+                        пансионатов, оздоровительных лагерей. Необходимость тщательной обработки большого количества
+                        посуды, овощей и фруктов вынуждает владельцев заведения подбирать функциональные и практичные
+                        изделия. Качественная ванна моечная из нержавеющей стали – это самое оптимальное решение для
+                        грамотного обустройства кухонных помещений промышленных масштабов или частных территорий.
+                    </p>
+                </div>
+                <div class="oCol1">
+                    <iframe src="libiray/OProduc4/index.html" frameborder="0"></iframe>
+                </div>
+                <div class="oCol2 none">
+                    <h1 id="lan59">Ванны моечные</h1>
+                    <p id="lan60">
+                        Кухонный инвентарь изготовлен из высокотехнологичной стали толщиной 1,2 мм – 1,5 мм с отличной
+                        эксплуатационной характеристикой материала. Металлическая ванна обладает долговечностью и
+                        высоким прочностным запасом, инвентарь прост в санитарно-гигиенической обработке и имеет
+                        солидный облик. Абсолютная пожарная безопасность, стойкость к влаге, плесени и грибку делает
+                        изделие безопасным для применения в местах большого скопления людей. <br>
+                        Моечные зоны являются неотъемлемой частью общественных учреждений: столовых, санаториев,
+                        пансионатов, оздоровительных лагерей. Необходимость тщательной обработки большого количества
+                        посуды, овощей и фруктов вынуждает владельцев заведения подбирать функциональные и практичные
+                        изделия. Качественная ванна моечная из нержавеющей стали – это самое оптимальное решение для
+                        грамотного обустройства кухонных помещений промышленных масштабов или частных территорий.
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
     <!-- -------------------------------------------- O nas ------------------------------------------------ -->
     <div class="fon1">
         <section class="part">
-            <h3>Наши партнёры</h3>
+            <h3 id="lan61">Наши партнёры</h3>
             <div class="marquee">
                 <div class="marquee__content">
                     <ul class="list-inline">
@@ -290,22 +493,22 @@
                 </div> -->
             </div>
         </section>
-<!-- -------------------------------------------- Otziv ------------------------------------------------ -->
-<section class="otziv">
-    <div class="otziv-box">
-        <iframe src="libiray/otziv/index.html" frameborder="0"></iframe>
-    </div>
-</section>
-<!-- -------------------------------------------- Form ------------------------------------------------ -->
+        <!-- -------------------------------------------- Otziv ------------------------------------------------ -->
+        <!-- <section class="otziv">
+            <div class="otziv-box">
+                <iframe src="libiray/otziv/index.html" frameborder="0"></iframe>
+            </div>
+        </section> -->
+        <!-- -------------------------------------------- Form ------------------------------------------------ -->
         <section class="form">
-            <h1>Закажите обратный звонок</h1>
-            <p>В течении 10 минут, наш менеджер свяжется с Вами</p>
+            <h1 id="lan62">Закажите обратный звонок</h1>
+            <p id="lan63">В течении 10 минут, наш менеджер свяжется с Вами</p>
             <div class="formBox">
                 <form action="">
-                    <input type="text" placeholder="*Ваше имя :">
-                    <input type="number" placeholder="*Телефон :">
-                    <textarea placeholder="Комментарии :"></textarea>
-                    <button>ОТПРАВИТЬ</button>
+                    <input id="lan64" type="text" placeholder="*Ваше имя :">
+                    <input id="lan65" type="number" placeholder="*Телефон :">
+                    <textarea id="lan66" placeholder="Комментарии :"></textarea>
+                    <button id="lan67">ОТПРАВИТЬ</button>
                 </form>
             </div>
         </section>
@@ -313,16 +516,16 @@
     <footer>
         <div class="col-1">
 
-            <h1>Мы всегда на связи</h1>
-            <p>Телефон горячей линии:</p>
+            <h1 id="lan68">Мы всегда на связи</h1>
+            <p id="lan69">Телефон горячей линии:</p>
             <h2><a href="tel: +998882243000">+998(88) 224-30-00</a></h2>
             <h2><a href="tel: +998973001331">+998(97) 300-13-31</a></h2>
             <a
                 href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=Ab5oB3r-rJghrWGuz03u9j6XMf7U-lSop2vs3NJ1QD2L0iydOPBZwTJqAUHCqXv94T_qJgJRqV-NQA&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-987721400%3A1723878073996051&ddm=0">decoroomgroup@gmail.com</a>
             <i class="fa fa-telegram fa-lg" aria-hidden="true"></i>
             <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-            <p style="margin-top: 20px;">Адрес офиса:</p>
-            <h3>Узбекистан, P9XV+JV8, Buxoro, Buxoro Viloyati</h3>
+            <p id="lan70" style="margin-top: 20px;">Адрес офиса:</p>
+            <h3 id="lan71">Узбекистан, P9XV+JV8, Buxoro, Buxoro Viloyati</h3>
         </div>
         <div class="col-2">
             <div id="map" style="width: 100%; height: 100%"></div>
@@ -374,7 +577,23 @@
         }
     </script>
     <script src="script.js"></script>
-
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./libiray/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function () {
+      $(".vertical-center-3").slick({
+        dots: false,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 3,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: false,
+      });
+    });
+  </script>
 
 </body>
 

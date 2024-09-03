@@ -45,7 +45,20 @@ body{
     50%{transform: scale(1.5);}
     100%{transform: scale(1);}
 }
-
+@media screen and (max-width:500px) {
+    .loader h1{
+        font-size: 40px;
+        letter-spacing: 15px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:500px) {
+    .loader h1{
+        font-size: 40px;
+        letter-spacing: 10px;
+        text-align: center;
+    }
+}
 /* ********************************************** Fon ***********************************************************/
 .fon{
     /* background-blend-mode: multiply; */
@@ -122,6 +135,77 @@ nav .navBox ul li{
     color: #d0d0d0;
     font-weight: bold;
     cursor: pointer;
+}
+.fa-phone{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.downPhon{
+    position: absolute;
+    background-color: rgb(3, 15, 28);
+    padding: 15px;
+    display: none;
+    top: 70px;
+    border-radius: 10px;
+}
+.downPhon a{
+    display: block;
+    padding: 15px;
+    color: rgb(42, 100, 188);
+    font-size: 20px;
+}
+.downPhon a:hover{
+    color: rgb(255, 80, 243);
+}
+nav .lan{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 20px;
+}
+nav .lan a{
+    /* border: 2px solid red; */
+    color: white;
+    cursor: pointer;
+}
+.fa-language{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.lanDown{
+    position: absolute;
+    display: none;
+    background-color: rgb(3,15,28);
+    top: 70px;
+}
+.lanDown a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.show{
+    display: block;
+}
+@media screen and (max-width:500px) {
+    nav .navBox .logo{
+        margin: 0px 5px 0px 0px;
+    }
+    nav{
+        padding: 0px 5px;
+    }
+    nav .downPhon{
+        right: 0px;
+        padding: 5px;
+    }
+    nav .downPhon a{
+        font-size: 17px;
+    }
+    nav .downPhon .fa-phone{
+        font-size: 25px;
+        
+    }
 }
 /* ********************************************** Menyu left drop ***********************************************************/
 .spanchik {
@@ -204,7 +288,7 @@ nav .navBox ul li{
 
 
 @media screen and (max-width: 1145px) {
-    nav .navBox ul{
+    nav .navnon{
         display: none;
     }
     .spanchik {
@@ -223,13 +307,9 @@ nav .navBox ul li{
 }
 
 @media screen and (max-width: 630px) {
-    .btn2{
+    nav .navnon1{
         display: none;
     }
-    .btn1{
-        display: none;
-    }
-    
 }
 @media screen and (max-height: 450px) {
     .sidenav {
@@ -264,6 +344,13 @@ header h1{
     color: white;
     font-size: 60px;
     width: 90%;
+    text-transform: uppercase;
+}
+header h2{
+    color: white;
+    font-size: 50px;
+    width: 90%;
+    text-transform: uppercase;
 }
 header button{
     cursor: pointer;
@@ -271,7 +358,6 @@ header button{
     padding: 20px;
     color: whitesmoke;
     font-size: 25px;
-    width: 10%;
     border-radius: 20px;
     background: linear-gradient(135deg, rgb(255, 80, 243) 20%, rgb(0, 195, 255) 80%);
     -webkit-background-clip: text;
@@ -291,12 +377,25 @@ header button:active{
 @media screen and (max-width: 500px) {
     header{
         height: 400px;
+        gap: 20px;
     }
-    
+    header h1{
+        font-size: 30px;
+    }
+    header h2{
+        font-size: 20px;
+    }
+    header button{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 400px) {
     header{
         height: 300px;
+    }
+    header h1{
+        font-size: 25px;
+        margin-top: 50px;
     }
     
 }
@@ -420,7 +519,6 @@ header button:active{
 }
 .oNasSlidebox1{
     width: 650px;
-    height: 350px;
     /* border: 2px solid blue; */
 }
 .oNasSlidebox2{
@@ -437,28 +535,93 @@ header button:active{
     height: 100%;
     /* border: 3px solid red ; */
 }
-@media screen and (max-width: 1200px) {
-    .oNasSlidebox1{
-        /* width: 100%; */
-    }
-    .oNasSlidebox2{
-        /* width: 100%; */
-    }
-}
 @media screen and (max-width: 500px) {
     .oNasSlidebox2 h1{
         font-size: 25px;
     }
+    .oNasSlidebox2{
+        padding: 10px;
+    }
     
 }
+/* ********************************************** slick ***********************************************************/
+.sliderNas {
+    width: 100%;
+    /* height: 400px; */
+    /* border: 2px solid red; */
+    color: white;
+}
+
+  .sliderNas h2 {
+    margin: 5px 0px;
+    padding: 10px;
+    /* border: 2px solid blue; */
+  }
+  
+  .sliderNas h2 b {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0, 0);
+    color: white;
+    background: linear-gradient(rgb(3, 15, 28), rgb(0, 21, 44)) padding-box,
+    linear-gradient(45deg, rgb(255, 80, 243), rgb(0, 195, 255)) border-box;
+    border: 1px solid transparent;
+    border-radius: 30px;
+  }
+  
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+    border-radius: 30px;
+  }
+
+  .slick-active {
+    opacity: .3;
+  }
+
+  .slick-current {
+    opacity: 1;
+
+  }
+  @media screen and (max-width: 600px) {
+   .sliderNas h2 h2 b{
+      font-size: 20px;
+    }
+    
+  }
+  @media screen and (max-width: 500px) {
+    .sliderNas h2 b{
+      font-size: 15px;
+    }
+    
+  }
+  @media screen and (max-width: 400px) {
+    .sliderNas h2 b{
+      font-size: 14px;
+    }
+    
+  }
+  @media screen and (max-width: 360px) {
+    .sliderNas h2 b{
+      font-size: 11px;
+    }
+    
+  }
+  @media screen and (max-width: 320px) {
+    .sliderNas h2 b{
+      font-size: 10px;
+    }
+    
+  }
 /* ********************************************** Content ***********************************************************/
 .images-slider{
     height: 400px;
     margin-bottom: 50px;
+    /* border: 2px solid blue; */
 }
 .images-slider iframe{
     width: 100%;
     height: 100%;
+    /* border: 2px solid blue; */
 }
 .nash{
     text-align: center;
@@ -510,6 +673,7 @@ header button:active{
     align-items: center;
 }
 .nashBox iframe{
+    /* border: 2px solid green; */
     width: 100%;
     height: 700px;
 }
@@ -525,6 +689,11 @@ header button:active{
         
     }
     
+}
+@media screen and (max-width: 500px) {
+    .nashBox iframe{
+        height: 350px;
+    }
 }
 /* ********************************************** Product ***********************************************************/
 .products{
@@ -578,9 +747,63 @@ header button:active{
     .productsCont{
         width: 100%;
     }
-    
 }
-   /* ********************************************** nam doverayut ***********************************************************/
+.productsBox{
+    height: initial;
+}
+/* ********************************************** OProduc ***********************************************************/
+.OProduc{
+    margin-top: 150px;
+}
+.OProduc h1{
+    color: white;
+    text-align: center;
+    margin: 50px 0px;
+}
+.OProducBox{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.oCol1,.oCol2{
+    /* border: 2px solid green; */
+    height: 500px;
+    width: 700px;
+}
+.oCol1{
+    width: 900px;
+}
+.oCol2{
+    padding: 10px;
+}
+.oCol1 iframe{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+.oCol2 p{
+    font-size: 20px;
+    color: white;
+}
+.bloc{
+    display: none;   
+
+}
+@media screen and (max-width: 800px) {
+    .oCol2{
+        height: initial;
+    }
+    .bloc{
+        display: block;
+    }
+    .none{
+        display: none;   
+    
+    }
+}
+/* ********************************************** nam doverayut ***********************************************************/
 .part{
     padding: 30px 0px;
     text-align: center;
@@ -634,17 +857,17 @@ header button:active{
         color: white;
     }
     .list-inline li{
-        /* border: 2px solid blue; */
         padding: 20px 40px;
-        opacity: 1;
+        opacity: 0.5;
         cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: white;
-        &:hover{
-            opacity: 1;
-        }
+    }
+    .list-inline li:hover{
+        opacity: 1;
+
     }
     .list-inline li img{
         width: 200px;
@@ -742,10 +965,10 @@ header button:active{
     background-image: linear-gradient(to right, rgb(228 122 139), rgb(196 221 242));
     border-radius: 10px;
     font-size: 18px;
-
-    &:hover {
-        background-color: rgb(255, 106, 111, 0.5);
-    }
+    /* border: 2px solid red; */
+}
+.formBox button:hover {
+    background-image: linear-gradient(to right, rgb(196 221 242),rgb(228 122 139));
 }
 
 @media screen and (max-width: 810px) {
