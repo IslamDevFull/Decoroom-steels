@@ -13,11 +13,11 @@
 
 <body>
     <!-- -------------------------------------------- Preloader ------------------------------------------------ -->
-    <div class="preloader" id="pageLoader">
+    <!-- <div class="preloader" id="pageLoader">
         <div class="loader">
             <h1>Decoroom steel</h1>
         </div>
-    </div>
+    </div> -->
     <!-- -------------------------------------------- Menyu ------------------------------------------------ -->
     <nav id="nav">
         <div class="navBox">
@@ -26,10 +26,10 @@
         </div>
         <div class="navBox navnon">
             <ul>
-                <li id="lan">Главная</li>
-                <li id="lan1">Наши работы</li>
-                <li id="lan2">О компании</li>
-                <li id="lan3">Контакты</li>
+                <li><a id="lan" href="index.html">Главная</a></li>
+                <li><a id="lan2" href="#lan9">О компании</a></li>
+                <li><a id="lan1" href="#lan50">Наши работы</a></li>
+                <li><a id="lan3" href="#lan68">Контакты</a></li>
             </ul>
         </div>
         <div class="phon"><i onclick="document.getElementById('downPhon').classList.toggle('show');" class="fa fa-phone" aria-hidden="true"></i>
@@ -38,7 +38,7 @@
                 <a href="tel: +998973001331"><i class="fa fa-phone" aria-hidden="true"></i> +998(97) 300-13-31</a>
             </div>
         </div>
-        <div class="dropLan"><i onclick="document.getElementById('lanDown').classList.toggle('show');" class="fa fa-language" aria-hidden="true"></i>
+        <div class="dropLan"><i onclick="document.getElementById('lanDown').classList.toggle('show');" class="fa fa-globe" aria-hidden="true"></i>
             <div class="lanDown" id="lanDown">
                 <a id="uz">UZ</a>
                 <a id="ru">RU</a>
@@ -55,9 +55,9 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a id="lan_1" href="index.html">Главная</a>
-        <a id="lan1_1" href="">Наши работы</a>
-        <a id="lan2_1" href="">О компании</a>
-        <a id="lan3_1" href="">Контакты</a>
+        <a id="lan2_1" href="#lan9">О компании</a>
+        <a id="lan1_1" href="#lan50">Наши работы</a>
+        <a id="lan3_1" href="#lan68">Контакты</a>
         <div class="leftContact">
             <h3><a href="tel: +998882243000">+998(88) 224-30-00</a></h3>
             <h3><a href="tel: +998973001331">+998(97) 300-13-31</a></h3>
@@ -314,7 +314,7 @@
         </section>
         <!-- -------------------------------------------- Produkti ------------------------------------------------ -->
         <section class="OProduc">
-            <h1 id="lan50">О нашей продукции</h1>
+            <h1 id="lan50" class="lan50">О Нашей продукции</h1>
             <div class="OProducBox">
                 <div class="oCol2 bloc">
                     <h1 id="lan51_1">Перила</h1>

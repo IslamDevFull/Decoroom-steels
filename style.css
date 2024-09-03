@@ -98,7 +98,7 @@ nav .navBox .logo{
     background-size: 190% 190%;
     background-position: -21px -19px;
     margin: 0px 10px;
-    border-radius: 20px 0px;
+    border-radius: 50px;
     color: white;
 }
 .navBox h3{
@@ -131,10 +131,21 @@ nav .navBox ul{
 }
 nav .navBox ul li{
     /* border: 2px solid green; */
+}   
+nav .navBox ul li a{
     padding: 15px;
+    /* border: 2px solid red; */
     color: #d0d0d0;
     font-weight: bold;
     cursor: pointer;
+    display: block;
+    text-decoration: none;
+}
+nav .navBox ul li a:hover{
+    background: linear-gradient(135deg, rgb(255, 80, 243) 20%, rgb(0, 195, 255) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 .fa-phone{
     color: white;
@@ -163,12 +174,7 @@ nav .lan{
     display: flex;
     gap: 20px;
 }
-nav .lan a{
-    /* border: 2px solid red; */
-    color: white;
-    cursor: pointer;
-}
-.fa-language{
+.fa-globe{
     color: white;
     font-size: 30px;
     cursor: pointer;
@@ -184,6 +190,7 @@ nav .lan a{
     padding: 10px;
     text-align: center;
     color: white;
+    cursor: pointer;
 }
 .show{
     display: block;
@@ -405,7 +412,9 @@ header button:active{
     text-align: center;
     font-style: italic;
     color: white;
-    padding: 50px 0px;
+    padding: 80px 0px 50px 0px;
+    /* margin-top: 30px; */
+    /* border: 2px solid red; */
 }
 .oNas{
     display: flex;
@@ -759,6 +768,13 @@ header button:active{
     color: white;
     text-align: center;
     margin: 50px 0px;
+    /* border: 2px solid blue; */
+}
+.lan50{
+    margin: 0px 0px;
+    padding: 90px 0px 0px 0px ;
+    font-size: 35px;
+    font-style: italic;
 }
 .OProducBox{
     /* border: 2px solid blue; */
@@ -800,7 +816,11 @@ header button:active{
     }
     .none{
         display: none;   
-    
+    }
+}
+@media screen and (max-width: 500px) {
+    .lan50{
+        font-size: 30px;
     }
 }
 /* ********************************************** nam doverayut ***********************************************************/
@@ -858,7 +878,7 @@ header button:active{
     }
     .list-inline li{
         padding: 20px 40px;
-        opacity: 0.5;
+        opacity: 1;
         cursor: pointer;
         display: flex;
         justify-content: center;
@@ -1034,7 +1054,8 @@ footer {
 }
 
 footer h1 {
-    margin: 40px 0px;
+    margin-bottom: 10px;
+    /* padding-top: 30px; */
 }
 
 footer p {
@@ -1087,12 +1108,6 @@ footer h3 {
     }
 }
 
-@media screen and (max-width: 1000px) {
-
-    footer h1 {
-        margin: 30px 0px;
-    }
-}
 
 @media screen and (max-width: 900px) {
     .col-2 {
