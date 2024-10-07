@@ -22,7 +22,7 @@ document.body.onload = () => {
     if (!preloader.classList.contains('done')) {
       preloader.classList.add('done');
     }
-  }, 4000)
+  }, 2000)
 }
 // /////////////////////////////////////////////////// Lang //////////////////////////////////////////////////
 document.getElementById('uz').addEventListener('click', () => {
